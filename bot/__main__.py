@@ -74,7 +74,7 @@ Type /{BotCommands.HelpCommand} to get a list of available commands
 '''
         sendMarkup(start_string, context.bot, update.message, reply_markup)
     else:
-        sendMarkup('All The Uploaded Links and Leeched Files By You Will Be Sent Here In Your Private Chat From Now', context.bot, update.message, reply_markup)
+        sendMarkup(f'Dear {uname},\n\n<b>NOTE:</b> All The Uploaded Links and Leeched Files By You Will Be Sent Here In Your Private Chat From Now.', context.bot, update.message, reply_markup)
 
 def restart(update, context):
     restart_message = sendMessage("Restarting...", context.bot, update.message)
